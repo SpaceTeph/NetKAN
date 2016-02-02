@@ -1,17 +1,17 @@
 {
     "$kref": "#/ckan/kerbalstuff/536",
     "identifier": "EnduranceSpaceExplorationSystem",
-    "license": "restricted",
-    "spec_version": 1,
-	
+    "license": "CC-BY-NC-4.0",
+    "spec_version": "v1.4",
+    "depends": [
+        { "name": "KIS" },
+        { "name": "RasterPropMonitor" }
+	],
 	"install": [
 		{
-			"file": "Endurance",
-			"install_to": "GameData"
-		},
-		{
-			"file": "Ships",
-			"install_to": "Ships"
+			"find": "Endurance",
+			"install_to": "GameData",
+			"filter": ".DS_Store"
 		}
 	]
 }

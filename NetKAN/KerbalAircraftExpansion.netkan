@@ -4,17 +4,18 @@
 	"$kref" : "#/ckan/kerbalstuff/391",
 	"license" : "GPL-3.0",
 	"x_netkan_license_ok": true,
+    "x_netkan_epoch": "1",
 	"install" : [
 		{
-			"file" : "KAX",
-			"install_to" : "GameData"
-		},
-		{
-			"file": "Firespitter/Resources/Firespitter.cfg",
-			"install_to": "GameData/Firespitter/Resources/"
+			"file": "KAX",
+			"install_to": "GameData",
+			"filter" : ["KAX 2.4.2 dds textures.7z", "Example Craft"],
+			"comment": "Example crafts are filtered out becouse its impossible to install ships to subdirectory."
 		}
 	],
 	"depends": [
-		{ "name" : "FirespitterCore" }
+		{ "name" : "FirespitterCore" },
+		{ "name" : "FirespitterResourcesConfig"},
+		{ "name" : "ModuleManager"}
 	]
 }
